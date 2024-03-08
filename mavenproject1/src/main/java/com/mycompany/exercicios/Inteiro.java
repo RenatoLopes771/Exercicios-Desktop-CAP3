@@ -27,4 +27,29 @@ public class Inteiro {
     public void imprime() {
         System.out.println(this.valor);
     }
+
+    public int soma(int v) {
+        this.valor += v;
+        return this.valor;
+    }
+
+    public int subtrai(int v) {
+        this.valor -= v;
+        return this.valor;
+    }
+
+    public int multiplicaPor(int v) {
+        this.valor *= v;
+        return this.valor;
+    }
+
+    public int dividePor(int v) {
+        if (v == 0) {
+            System.out.println("Erro! Valor a dividir tem de ser diferente de 0");
+            return this.valor;
+        }
+
+        this.valor /= v;
+        return this.valor;
+    }
 }
