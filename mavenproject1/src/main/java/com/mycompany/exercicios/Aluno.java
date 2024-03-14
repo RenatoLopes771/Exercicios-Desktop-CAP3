@@ -24,8 +24,16 @@ public class Aluno {
         this.p2 = p2;
         this.p3 = p3;
         this.p4 = p4;
+    }
 
-        calculo();
+    public Aluno() {
+    }
+
+    public void recebeNotas(double p1, double p2, double p3, double p4) {
+        this.p1 = p1;
+        this.p2 = p2;
+        this.p3 = p3;
+        this.p4 = p4;
     }
 
     private void calculo() {
@@ -40,7 +48,13 @@ public class Aluno {
         }
     }
 
-    public void veredito() {
-        System.out.println("Média: " + media + " -> " + veredito + ".");
+    public String veredito() {
+        calculo();
+
+        String saida = "Média: " + media + " -> " + veredito + ".";
+
+        System.out.println(saida);
+
+        return saida;
     }
 }
