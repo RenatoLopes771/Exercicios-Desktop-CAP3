@@ -13,21 +13,23 @@ public class Ola {
     private int valor;
     private final int CUMPRIMENTOS = 3;
 
-    public void cumprimenta() {
+    public String cumprimenta() {
         valor = (int) (Math.random() * CUMPRIMENTOS) + 1;
 
         switch (valor) {
             case 1:
                 System.out.println("Yarrr! Olá!!!");
-                break;
+                return "Yarrr! Olá!!!";
 
             case 2:
                 System.out.println("Hmmm si si olá");
-                break;
+                return "Hmmm si si olá";
 
             case 3:
                 System.out.println("Hello sir");
-                break;
+                return "Hello sir";
         }
+
+        return "";
     }
 }
